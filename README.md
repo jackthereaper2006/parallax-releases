@@ -79,4 +79,4 @@ these rules and are listed in the [changelog](CHANGELOG.md).
 
 ## License
 
-Proprietary. Copyright © 2025-2026 BXC. All rights reserved. See [LICENSE](LICENSE).
+Proprietary. Copyright © 2025-2026 Muhammad Waqas Butt. All rights reserved. Copying, modifying or reverse engineering Parallax is not permitted. See [LICENSE](LICENSE).
