@@ -6,6 +6,23 @@ collected here. Version numbers follow [VERSIONING.md](VERSIONING.md).
 
 ---
 
+## 1.0 — 15 October 2026
+
+Parallax 1.0 is the same app as 0.5.113, under new version numbers and with its owner's name on it.
+
+### New
+- **Version numbers start again at 1.0.** A small fix is now 1.0.1, something new is 1.1, and a large redesign is 2.0. The login screen and Settings show the short form, for example "Parallax 1.0".
+
+### Changed
+- **Parallax is owned by Muhammad Waqas Butt**, and BXC is licensed to use it. The Windows installer shows the licence before it installs, and Settings ▸ Application shows the copyright.
+- The installers no longer carry the program in readable form, or any of the business's own figures.
+- A few example hints inside empty boxes no longer show real names.
+
+### Before you update
+- No database changes, and nothing to do beforehand. Update HQ first, then use **Settings ▸ Application ▸ Force update all machines**.
+
+---
+
 ## Before 1.0: the development line (0.1.0 to 0.5.113)
 
 Parallax was built and put into daily use over 0.1.0 to 0.5.113, with more than 150 builds in
