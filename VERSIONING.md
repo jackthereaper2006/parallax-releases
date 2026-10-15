@@ -1,7 +1,7 @@
 # Versioning
 
-Parallax versions have three numbers: **MAJOR.MINOR.PATCH**. They are written the way
-Minecraft wrote its releases: `1.0`, `1.1`, `1.1.1`, `1.2`, `2.0`.
+Parallax versions have three numbers: **MAJOR.MINOR.PATCH**. A version ending in `.0` is
+shown without it, so releases read `1.0`, `1.1`, `1.1.1`, `1.2`, `2.0`.
 
 The first release under these rules is **1.0**. Everything before it (0.1.0 to 0.5.113) was
 the development line and keeps its old numbers.

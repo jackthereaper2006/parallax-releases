@@ -68,11 +68,18 @@ HQ before installing one of those.
 
 ## Versions
 
-Releases are numbered **MAJOR.MINOR.PATCH** and written short, the way early Minecraft did it:
+Every release has three numbers, **MAJOR.MINOR.PATCH**. The biggest change in a release
+decides which one goes up:
 
-- **2.0** is a revamp
-- **1.5** adds something new
-- **1.4.1** fixes or tweaks something
+| Number | Goes up when the release… | Example |
+|---|---|---|
+| Patch | fixes or tweaks something that already exists | 1.4 → 1.4.1 |
+| Minor | adds something new, or changes the database | 1.4 → 1.5 |
+| Major | redesigns the app in a way everyone notices | 1.9 → 2.0 |
+
+The numbers to the right of the one that goes up start again from zero, so 1.4.3 is followed
+by 1.5. No number stops at 9: 1.9 is followed by 1.10. A version ending in `.0` is shown
+without it, so 1.5.0 appears in the app and on this page as **Parallax 1.5**.
 
 The full rules are in [VERSIONING.md](VERSIONING.md). Releases up to 0.5.113 came before
 these rules and are listed in the [changelog](CHANGELOG.md).
