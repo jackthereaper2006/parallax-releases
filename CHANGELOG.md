@@ -6,6 +6,15 @@ collected here. Version numbers follow [VERSIONING.md](VERSIONING.md).
 
 ---
 
+## 1.0.1 — 17 October 2026
+
+Parallax 1.0.1 works and looks exactly like 1.0. Only the program's internal notes were tidied, so it is easier to look after.
+
+### Before you update
+- No database changes, and nothing to do beforehand. Update HQ first, then use **Settings ▸ Application ▸ Force update all machines**.
+
+---
+
 ## 1.0 — 15 October 2026
 
 Parallax 1.0 is the same app as 0.5.113, under new version numbers and with its owner's name on it.
