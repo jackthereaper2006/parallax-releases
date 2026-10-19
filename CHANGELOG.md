@@ -6,6 +6,18 @@ collected here. Version numbers follow [VERSIONING.md](VERSIONING.md).
 
 ---
 
+## 1.0.2 — 19 October 2026
+
+Parallax 1.0.2 fixes receipts printed from a Linux computer.
+
+### Fixed
+- **Receipts printed from a Linux computer come out full size.** Bills sent to a thermal receipt printer from a Linux machine printed very small, or full size with the right side cut off. They now print the same as from a Windows till, and the paper is cut straight after the last line. Windows tills are not affected.
+
+### Before you update
+- No database changes, and nothing to do beforehand. Update HQ first, then use **Settings ▸ Application ▸ Force update all machines**.
+
+---
+
 ## 1.0.1 — 17 October 2026
 
 Parallax 1.0.1 works and looks exactly like 1.0. Only the program's internal notes were tidied, so it is easier to look after.
