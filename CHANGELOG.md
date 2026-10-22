@@ -6,6 +6,32 @@ collected here. Version numbers follow [VERSIONING.md](VERSIONING.md).
 
 ---
 
+## 1.1 — 22 October 2026
+
+Parallax 1.1 tightens who can do what on a till, and locks a till that is left alone.
+
+### New
+- **The till locks itself after 5 minutes with nobody using it.** Whoever was signed in unlocks it with their PIN, and anything half-typed is still there. The owner can change the time, or turn it off, in **Settings ▸ Business Rules**.
+- **Lock now, Switch user and Change my PIN** are in the menu under your name, top right. Switching user puts an open bill on hold first, so it is not lost.
+- **The PIN is asked again** before a saved bill is edited or deleted, and before Profit, Break-even, Comparison, Profit & Loss or the Balance Sheet is opened. It is not asked again for the next 5 minutes. The owner can turn this off in **Settings ▸ Business Rules**.
+- **Deleting a bill needs a reason**, which is kept in the bill's history.
+
+### Changed
+- **Sign-ins last 12 hours**, so everyone signs in again each morning.
+- **New PINs must be harder to guess.** The owner's PIN is 6 to 8 digits and everyone else's 4 to 8, and easy ones (1111, 1234, the shop's phone number) are refused. PINs already in use keep working until they are changed.
+- **Only the owner can enter or change a sale, payment, expense or income on a day that has already been closed.**
+- **Importing customers and stock from Excel is for the owner only.** Only the file picked with the Browse button is read. A file over 20 MB or 100,000 rows is refused, and a damaged file gives a message instead of an error.
+- **Staff without HR access no longer see pay.** HR screens need HR permission, and Costing Setup hides each person's wage from anyone without it.
+- **Who deleted, approved or changed something is taken from who is signed in,** never from what a screen sends.
+- **Before a new version starts for the first time, Parallax copies the database,** and does not start if it cannot. The last three copies are kept next to the database.
+
+### Before you update
+- No database changes. Make a fresh backup of HQ first anyway.
+- Update HQ first, then use **Settings ▸ Application ▸ Force update all machines** straight away: until a till has updated, editing or deleting a saved bill on it is refused.
+- Tell everyone they will need their PIN more often from today.
+
+---
+
 ## 1.0.2 — 19 October 2026
 
 Parallax 1.0.2 fixes receipts printed from a Linux computer.
