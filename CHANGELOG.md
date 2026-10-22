@@ -6,6 +6,27 @@ collected here. Version numbers follow [VERSIONING.md](VERSIONING.md).
 
 ---
 
+## 1.2 — 22 October 2026
+
+Parallax 1.2 runs on a newer engine, gives each computer an A4 printer, and fixes the Beta switch on tills.
+
+### New
+- **An A4 printer for each computer.** Settings, the *Printers (this computer)* card, *A4 printer (invoices, reports)*. Once it is chosen, every A4 invoice and every report prints straight to it on A4 paper, without the print dialog.
+
+### Changed
+- **The engine Parallax runs on is updated** to a current, supported version, with the security fixes that brings. Nothing on the screens is meant to change.
+- **Windows no longer tells Parallax which printer is the default, or whether a printer is switched off.** Settings no longer marks the default printer on a Windows computer. Before a receipt prints, Parallax still checks a printer shared from another computer, and says so if that computer is off.
+
+### Fixed
+- **Switching a till to Beta said "Unauthorized".** The owner can now switch a till between Stable and Beta from Settings.
+
+### Before you update
+- No database changes. Make a fresh backup of HQ first anyway.
+- Update HQ first, then use **Settings ▸ Application ▸ Force update all machines**.
+- **After updating, choose the A4 printer on every computer that prints A4 invoices or reports.** Without it, the print dialog opens, and an A4 page can come out tiny or cut off on the right when a different printer is picked in it.
+
+---
+
 ## 1.1 — 22 October 2026
 
 Parallax 1.1 tightens who can do what on a till, and locks a till that is left alone.
