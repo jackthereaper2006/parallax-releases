@@ -6,6 +6,23 @@ collected here. Version numbers follow [VERSIONING.md](VERSIONING.md).
 
 ---
 
+## 1.3 — 29 October 2026
+
+Parallax 1.3 adds Cut Sheets: record a sheet cut from one size into another, like 12x18 into 9x12.
+
+### New
+- **Production ▸ Cut Sheets.** Pick the sheet that was cut, how many kg, the sheet it became, and the kg that came out. The stock moves across at the same cost. No labour or overhead is added, because the sheet already carried them when it was made.
+- **Kg out fills itself in.** Halving 12x18 into 9x12 keeps every kilo. For a cut that does not come out even, such as 12x18 into 8x10, it fills in the share of the sheet the pieces use. Change it if you weighed less.
+- **Odd cuts are flagged, not refused.** A cut that does not come out even, more kg out than the cut can give, or two sheets whose names do not look like the same material still records, and the job is marked for a second look with a sentence saying why.
+- **It works for every sheet stocked in kg whose name has a size** (12x18, 9x12, 10*15, and the X-ray sizes), at the factory and at the shops. Any kg lost in the cut is spread over the sheets that came out.
+- A cut waits in **Production ▸ Approvals** like every other production entry, and the owner can reverse it like any other job.
+
+### Before you update
+- No database changes. Make a fresh backup of HQ first anyway.
+- Update HQ first, then use **Settings ▸ Application ▸ Force update all machines**.
+
+---
+
 ## 1.2 — 22 October 2026
 
 Parallax 1.2 runs on a newer engine, gives each computer an A4 printer, and fixes the Beta switch on tills.
