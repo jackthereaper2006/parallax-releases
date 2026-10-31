@@ -6,6 +6,29 @@ collected here. Version numbers follow [VERSIONING.md](VERSIONING.md).
 
 ---
 
+## 1.4 — 31 October 2026
+
+Parallax 1.4 fixes how wages are charged on packet jobs and corrects the jobs already recorded, brings the logo back on Linux, gives the screen lock more time, and makes the PIN screens match the login screen.
+
+### Fixed
+- **Wages on packet jobs are charged per packet.** A family worked in kilos that makes packets was charging wages on the weight of the packets. 300 packets at Rs 20 now cost 300 × 20, whatever they weigh. Crew labour, factory overhead and the increment still run per kilo.
+- **Jobs already recorded are corrected automatically.** The first time HQ opens this version, it finds every job charged this way and corrects its wages, the cost of its stock, and any bill that already sold that stock. It makes a backup first and runs once.
+- **The Parallax logo is back on Linux.** The taskbar showed a blank placeholder after 1.2.
+
+### Changed
+- **The screen locks after 15 minutes of no use**, up from 5. The time can still be changed on Settings ▸ Business Rules.
+- **The lock screen and the PIN prompt have been redesigned** to match the login screen.
+- **The wages register and Families now name the unit**, such as "300 packets".
+
+### Security
+- Updated a network component that could carry saved credentials across a redirect.
+
+### Before you update
+- This version corrects figures in the database. Make a fresh backup of HQ first.
+- Update HQ first, then use **Settings ▸ Application ▸ Force update all machines**. Tills keep locking at 5 minutes until HQ has updated.
+
+---
+
 ## 1.3 — 29 October 2026
 
 Parallax 1.3 adds Cut Sheets: record a sheet cut from one size into another, like 12x18 into 9x12.
