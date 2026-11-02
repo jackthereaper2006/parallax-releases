@@ -6,6 +6,30 @@ collected here. Version numbers follow [VERSIONING.md](VERSIONING.md).
 
 ---
 
+## 1.5 — 2 November 2026
+
+Parallax 1.5 adds a product-by-product sales and profit report, shows what each customer still owes and for how long, finds bills by their remarks, and makes the Dashboard and Sales List much faster.
+
+### New
+- **Reports ▸ Products.** Every product sold in any period, with quantity sold and returned, sales, cost, profit, margin and bills. Search it, sort it by sales, profit, margin or quantity, and print it.
+- **Unpaid tab on the customer ledger.** Lists what the customer still owes, oldest first, with the amount still owed and the days since each entry. Payments clear the oldest entry first, so the total always matches the ledger balance. Pick an As of date to see an earlier position, and print it.
+- **Oldest Unpaid on the customer ledger.** A new card at the top shows how old the customer's oldest unpaid entry is.
+- **Remarks on the Sales List.** A new Remarks column, and the search box now finds a bill by its remarks.
+
+### Changed
+- **Sales List search looks through every bill.** While the dates are on today, a search covers all dates and says so. Pick a date range to search inside it.
+- **Reports has two groups** in the menu: Sales & profit, and Stock.
+
+### Fixed
+- **The Dashboard and Sales List no longer stall.** Each refresh was taking about a second as bills built up. It now takes a small fraction of that.
+- **The Sales List reaches older bills.** A past date range used to show only the most recent 200 bills.
+
+### Before you update
+- This version changes the database. Make a fresh backup of HQ first.
+- Update HQ first, then use **Settings ▸ Application ▸ Force update all machines**. The new report and the Unpaid tab need HQ to be on 1.5.
+
+---
+
 ## 1.4 — 31 October 2026
 
 Parallax 1.4 fixes how wages are charged on packet jobs and corrects the jobs already recorded, brings the logo back on Linux, gives the screen lock more time, and makes the PIN screens match the login screen.
