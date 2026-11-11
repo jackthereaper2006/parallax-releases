@@ -6,6 +6,20 @@ collected here. Version numbers follow [VERSIONING.md](VERSIONING.md).
 
 ---
 
+## 1.5.1 — 11 November 2026
+
+Parallax 1.5.1 makes updates safe on Linux computers, including a Linux HQ.
+
+### Fixed
+- **A Linux HQ updates itself cleanly.** When an update was installed, the old copy could keep running beside the new one, so the HQ service kept restarting. A later update could also leave the program file missing. The new file now replaces the old one in a single step, and an HQ run as a service restarts once on the new version.
+- **Restarting Parallax on Linux restarts it.** Actions that restart the app (changing the connection, restoring a backup, leaving sandbox mode) could close Parallax on Linux instead of opening it again.
+- Windows tills are not affected.
+
+### Before you update
+- No database changes. A Linux HQ already on 1.5.0 must be updated by hand this once, because its updater is the old one; from 1.5.1 on it updates itself. Then use **Settings ▸ Application ▸ Force update all machines**.
+
+---
+
 ## 1.5 — 2 November 2026
 
 Parallax 1.5 adds a product-by-product sales and profit report, shows what each customer still owes and for how long, finds bills by their remarks, and makes the Dashboard and Sales List much faster.
