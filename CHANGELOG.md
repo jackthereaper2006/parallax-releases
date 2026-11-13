@@ -6,6 +6,22 @@ collected here. Version numbers follow [VERSIONING.md](VERSIONING.md).
 
 ---
 
+## 1.6 — 13 November 2026
+
+Parallax 1.6 stops one bad tape job from setting a product's cost, and warns you before you price off an odd cost.
+
+### Changed
+- **Damaged pieces are shared across the whole job.** When pieces come off the machine damaged, their cost now spreads over every good piece in the job, by width × length. Before, it landed only on the few good pieces of the same size, so 5 damaged out of 7 could make the other 2 cost three or four times their real cost. The job's total cost is the same; only who carries it changed.
+- **A made product's cost on Products is the average of the stock on the shelf**, not the cost of the last job. One unusual job can no longer swing it.
+
+### New
+- **"odd cost, check PO-…" on Products.** If stock still on the shelf came from a tape job where one size cost more than 25% away from that job's normal rate, the product says so under its cost, and the job number opens it. Check that job before setting a price from that cost.
+
+### Before you update
+- Take a database backup first. On its first start the update resets the cost of every made product to the average of its stock on the shelf, and keeps the old figures. HQ updates itself from 1.5.1, then use **Settings ▸ Application ▸ Force update all machines**.
+
+---
+
 ## 1.5.1 — 11 November 2026
 
 Parallax 1.5.1 makes updates safe on Linux computers, including a Linux HQ.
