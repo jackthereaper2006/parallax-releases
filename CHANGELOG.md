@@ -6,6 +6,28 @@ collected here. Version numbers follow [VERSIONING.md](VERSIONING.md).
 
 ---
 
+## 1.7 — 16 November 2026
+
+Parallax 1.7 makes every return name the bill it came from, and tightens security across sign-in, tills and printing.
+
+### New
+- **Return of bill on Sale Invoice.** Set Type to Return and type the bill number. The bill's customer and everything still left to return on it come in; keep only what came back and save. A return can take back no more than the bill sold, less what earlier returns already took, at no more than the bill's price.
+- **A return with no bill needs the owner.** Only the owner, signed in, can ring a return without naming its bill.
+- **A bill whose total does not match its lines is flagged** for the owner to review. It is still saved.
+
+### Changed
+- **Security.** Tighter checks on sign-in, PINs, tills, user changes, settings and printed pages. A user whose role, PIN or access is changed signs in again.
+- A till that cannot reach HQ no longer takes returns; it still takes cash sales paid in full.
+- The Windows installer runs Windows' own tools by their full path, and the backup it makes before erasing data now includes everything needed to open it.
+
+### Fixed
+- A refused save on Sale Invoice now shows as an error instead of with the saved tick.
+
+### Before you update
+- No database changes, but take a backup on HQ first as always. Tell the counter staff: from now on a return needs its bill number, and a return without a bill needs the owner. HQ updates itself; then use **Settings ▸ Application ▸ Force update all machines**.
+
+---
+
 ## 1.6 — 13 November 2026
 
 Parallax 1.6 stops one bad tape job from setting a product's cost, and warns you before you price off an odd cost.
