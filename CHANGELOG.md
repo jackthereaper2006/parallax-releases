@@ -6,6 +6,37 @@ collected here. Version numbers follow [VERSIONING.md](VERSIONING.md).
 
 ---
 
+## 1.10 — 19 November 2026
+
+Parallax 1.10 brings a contractor hub, tidies the production screens, and lets an order be taken back a step or deleted.
+
+### New
+- **Contractor hub.** A board of factories first: what each one holds, how many days it has been out, how much came back from closed jobs, and what we still owe them. Each job sent out has its own page, and each factory a holding statement. Recording a return takes you back to its job.
+- **Orders: take a step back.** On the Order Board an order can go back one step: take back a send (its transfer is voided, the stock returns to the factory shelf and the store is told), untick made, undo a confirm, or reopen a rejected or cancelled order.
+- **Orders: delete.** The owner or an admin can delete an order that has not moved stock, with a reason. Its number is not reused.
+- **3D Print** warns before saving when the factory shelf does not hold the sheet or ink the job takes.
+- **Salary Run** warns when the pay date is in the future.
+
+### Changed
+- **Record Production is retired for new work.** New jobs are recorded on Production Run, Tape Converting, 3D Print, Cut Sheets or Contractor Work. Jobs already recorded on it still open.
+- Production pages no longer carry their own Back buttons; the Back arrow in the top bar does it.
+- The Job Register shows every unfinished job, however many there are, and drops status buttons that could no longer do anything. Finish stays.
+- The production Overview links to the contractor ledger and no longer has a Refresh button (it refreshes itself).
+- Costing Setup tabs are in a clearer order; the Rate Calculator links to the shaft drawing.
+- Wages and increment history name the job each line was earned on, and open it.
+- The tape cost line under each size now lists every part of the cost, so it adds up.
+- Production approvals show the production site when none was picked.
+
+### Fixed
+- The Job Register could leave out jobs past the newest 200, so its In Progress count was too low.
+- Price Update history and the drafts list showed times five hours behind.
+- The Cut Sheets hint said every kilo carries over even when kilos were recorded as lost.
+
+### Before you update
+- No database changes, but take a backup on HQ first as always. HQ updates itself; then use **Settings ▸ Application ▸ Force update all machines**.
+
+---
+
 ## 1.9 — 19 November 2026
 
 Parallax 1.9 makes contractor work easier to read, adds an Order Ledger, and fixes an approval that could be marked approved without posting.
