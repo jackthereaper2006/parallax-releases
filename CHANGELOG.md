@@ -6,6 +6,24 @@ collected here. Version numbers follow [VERSIONING.md](VERSIONING.md).
 
 ---
 
+## 1.8 — 19 November 2026
+
+Parallax 1.8 adds Orders: a sale point asks the factory for stock, and the factory confirms, makes and sends it.
+
+### New
+- **Orders ▸ New Order.** A store lists what it needs and places the order. It appears on the factory's Order Board straight away, and the factory gets a popup.
+- **Orders ▸ Order Board.** Every order in five columns: Waiting, Confirmed, In production, Made, Sent. The board refreshes every 10 seconds.
+- **Confirm or reject.** The factory can change the quantity on each line before confirming, or set a line to 0 to leave it out. A rejected order needs a reason. The store can cancel its own order while it is still waiting.
+- **Job sheet.** Print job sheet gives an A4 sheet for the machine and labour team, with a tick box for each line and signature lines.
+- **Made and Send.** Tick an order as made, then send it to the store that ordered it or to another one. Sending is an ordinary stock transfer, so it cannot send more than the factory shelf holds. The store gets a popup when its order is sent.
+- An order on its own moves no stock and changes no money. Production is still recorded on its own screens.
+- New permissions on Settings ▸ Users: view, request, fulfil, send. Operators can do everything except send.
+
+### Before you update
+- **This update adds two database tables.** Take a backup on HQ first. HQ updates itself; then use **Settings ▸ Application ▸ Force update all machines**.
+
+---
+
 ## 1.7 — 16 November 2026
 
 Parallax 1.7 makes every return name the bill it came from, and tightens security across sign-in, tills and printing.
