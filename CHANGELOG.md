@@ -6,6 +6,29 @@ collected here. Version numbers follow [VERSIONING.md](VERSIONING.md).
 
 ---
 
+## 1.9 — 19 November 2026
+
+Parallax 1.9 makes contractor work easier to read, adds an Order Ledger, and fixes an approval that could be marked approved without posting.
+
+### New
+- **Orders ▸ Order Ledger.** Every order by day, week or month, with its lines shown inline and totals for the whole period.
+- **Contractor Ledger, rebuilt.** One row per job sent out, with its part returns inside it. Three tabs: Jobs, Factories (one card per factory: sent, came back, waste, still there) and Account (the factory's bills and payments with a running balance).
+- **A check against the books.** The top of the Contractor Ledger compares its total with Goods at Contractor in the accounts. Any job holding value that the page cannot list is named.
+
+### Changed
+- **Only the supplying factory's manager confirms an order**, and never their own order. The owner and admin still can. The Order Board says why Confirm is not offered.
+- Each order stage has its own colour on the board.
+- **Recording a return from a contractor:** no error is shown before anything is typed, and no figures appear until you say whether more is still coming. A line at the top shows what is with the factory, what this return used, and what stays there. Shorter help text.
+- Reverse is no longer on every Contractor Ledger row. It is on the job's own page.
+
+### Fixed
+- **A second part return waiting for approval on the same contractor job** could read Approved while nothing was posted. It now posts onto what is still at the factory, and an approval that cannot post stays waiting with the reason.
+
+### Before you update
+- No database changes, but take a backup on HQ first as always. HQ updates itself; then use **Settings ▸ Application ▸ Force update all machines**.
+
+---
+
 ## 1.8 — 19 November 2026
 
 Parallax 1.8 adds Orders: a sale point asks the factory for stock, and the factory confirms, makes and sends it.
