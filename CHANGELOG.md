@@ -6,6 +6,22 @@ collected here. Version numbers follow [VERSIONING.md](VERSIONING.md).
 
 ---
 
+## 1.10.1 — 21 November 2026
+
+Parallax 1.10.1 fixes a bill number that could be given out twice, and a handful of small things on prints and screens.
+
+### Fixed
+- **Bill numbers are never given out twice.** Deleting the newest bill let the next sale take the same number. A deleted bill's number now stays used.
+- A printed bill's time is when the bill was made, not when it was last edited.
+- The supplier payment voucher says **Printed by** for the person printing it (it used to say "Paid by").
+- The voucher no longer says "Advance" next to a balance of 0.
+- Costing Setup's change log shows local time, and its rates refresh after a month-end review is approved.
+- Return of bill shows each line's real stock instead of 0 and OUT.
+- The PIN prompt reads "Confirm it's you to continue", the idle lock says "1 idle minute", and the Job Register shows weights as Kgs throughout.
+
+### Before you update
+- No database changes, but take a backup on HQ first as always. HQ updates itself; then use **Settings ▸ Application ▸ Force update all machines**.
+
 ## 1.10 — 19 November 2026
 
 Parallax 1.10 brings a contractor hub, tidies the production screens, and lets an order be taken back a step or deleted.
