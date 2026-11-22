@@ -18,7 +18,7 @@ Parallax 1.11 makes every screen easier to read and closes the gaps found by a 2
 - The sidebar is a little wider so its labels fit.
 
 ### Security
-- **Every PIN sign-in is logged.** The owner is told about strange ones, such as a sign-in on a computer that person has never used, or many wrong PINs.
+- **Every PIN sign-in is logged**, right or wrong; **Settings ▸ Business Rules** lists the last 50. The owner and admins get a popup for a sign-in on a computer that person has never used (quiet for the first 7 days), a PIN lock, or 10 wrong PINs on one computer within 15 minutes.
 - HQ checks a customer or supplier before saving it: a blank or very long name, a negative credit limit, or an opening balance that is not a number is refused with a message.
 - A database error stays on HQ's log; a till or browser sees a plain sentence instead.
 - An old PIN-change route that skipped the PIN rule has been removed.
