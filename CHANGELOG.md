@@ -6,6 +6,27 @@ collected here. Version numbers follow [VERSIONING.md](VERSIONING.md).
 
 ---
 
+## 1.11 — 22 November 2026
+
+Parallax 1.11 makes every screen easier to read and closes the gaps found by a 25-point security checklist.
+
+### Easier to read
+- **Darker text.** Hint text, amber warnings, purple accents and the sidebar labels now stand out clearly from the background. The brand purple is a shade deeper.
+- **Field edges you can see.** Text boxes, search boxes and outline buttons have a visible border.
+- **Keyboard focus.** Tabbing through a screen now shows a clear ring around the field you are on.
+- **No tiny text.** Nothing is smaller than 11px. Labels and table headings are written in normal case instead of small spaced capitals. Status badges (PAID, VOID, …) keep their capitals.
+- The sidebar is a little wider so its labels fit.
+
+### Security
+- **Every PIN sign-in is logged.** The owner is told about strange ones, such as a sign-in on a computer that person has never used, or many wrong PINs.
+- HQ checks a customer or supplier before saving it: a blank or very long name, a negative credit limit, or an opening balance that is not a number is refused with a message.
+- A database error stays on HQ's log; a till or browser sees a plain sentence instead.
+- An old PIN-change route that skipped the PIN rule has been removed.
+- Updated react-router and fast-uri for known security problems.
+
+### Before you update
+- **One new table** (the sign-in log). HQ makes its own safety copy before it opens the database with 1.11, but take a backup on HQ first as always. HQ updates itself; then use **Settings ▸ Application ▸ Force update all machines**.
+
 ## 1.10.1 — 21 November 2026
 
 Parallax 1.10.1 fixes a bill number that could be given out twice, and a handful of small things on prints and screens.
