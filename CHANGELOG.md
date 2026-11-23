@@ -6,6 +6,41 @@ collected here. Version numbers follow [VERSIONING.md](VERSIONING.md).
 
 ---
 
+## 1.13 — 23 November 2026
+
+Parallax 1.13 adds employment contracts to HR and makes branch floats simpler.
+
+### New
+- **Employment contracts.** HR ▸ Contracts: enter the employee's details (name, father's name, CNIC, phone, address, emergency contact) and the job (title, location, start date, salary or wages, hours, probation, notice, duties). Print the contract on one A4 page, have the employee sign or put a thumb impression with a witness, then press **Mark signed** to keep it on record.
+- Saving a contract adds a new person to Employees, or updates an existing employee. A salary change on a contract counts from the contract date.
+- A signed contract is locked. A raise or a new job is made as a **new version**; once it is signed, the old one is kept as an old version. A contract made by mistake can be voided with a reason.
+- Each employee has a **Contract** button, and the Contracts page shows how many are waiting to be signed and how many staff have no signed contract.
+
+### Changed
+- **Simpler branch floats.** Staff see one Expenses page. Spending up to what is left in their branch's float needs no approval. A bigger expense is asked for first; once approved, it is paid from that branch's till.
+- Only an owner tops a float up.
+- Approvals, Monthly Bills and Floats show only to people who approve expenses.
+- The "daily expenses from the float" and "post without approval" switches are gone from Business Rules.
+
+### Before you update
+- **One new table** (the contracts). HQ makes its own safety copy before it opens the database with 1.13, but take a backup on HQ first as always. HQ updates itself; then use **Settings ▸ Application ▸ Force update all machines**.
+
+## 1.12 — 23 November 2026
+
+Parallax 1.12 brings an Expenses module with branch floats, and special orders with receiving at the store.
+
+### New
+- **Expenses** is its own module now, with four pages: Expenses, Monthly Bills, Floats and Approvals.
+- **Branch floats.** Each branch can be given a fixed float for its spending. Staff pay expenses from the float and an owner approves them; the till tops the float back up only by what was approved.
+- **Monthly bills.** Set up electricity, gas, internet and rent once. Each month's payment is entered against its bill, with the bill number, and compared with the usual amount.
+- **Ask before spending.** Repairs above a set amount are asked for and approved before the money is spent.
+- **Special orders.** Take a custom order for a customer with an advance payment.
+- **Receiving at the store.** Sent orders show at the receiving branch, where staff count what arrived and receive it.
+
+### Changed
+- Accounts ▸ Expenses has moved to the new Expenses module.
+- Sending an order no longer moves stock; the stock moves when the store receives it.
+
 ## 1.11 — 22 November 2026
 
 Parallax 1.11 makes every screen easier to read and closes the gaps found by a 25-point security checklist.
