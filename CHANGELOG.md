@@ -6,6 +6,24 @@ collected here. Version numbers follow [VERSIONING.md](VERSIONING.md).
 
 ---
 
+## 1.14 — 26 November 2026
+
+Parallax 1.14.0 lets you sell a received special order straight onto a bill, and gives Owner drawing its own button.
+
+### New
+- **Sell a received special order.** On **Orders ▸ Receive Orders**, a customer's order that has been received shows **Sell on invoice**. It opens the Sale Invoice already filled: the order's customer, each product at the quantity received, at today's sale price (change anything as usual). Complete the sale as normal.
+  - The order then shows **Sold on bill …** (click it to open the bill), and the Sell button goes away.
+  - An order can be sold only once, only to its own customer. Deleting that bill makes the order sellable again.
+  - The advance taken with the order is already a credit on the customer's account, so it shows in Prev Balance.
+  - A received order that has been sold can't be taken back; delete the bill first.
+- **Owner drawing has its own button.** **Expenses ▸ ↩ Owner drawing**: pick where the money came from (a branch till, a bank or owner cash), enter the amount and press **Pay**. No branch, type or category to choose.
+  - Drawings are no longer offered in the normal expense form and no longer mixed into the expense list. They have their own **Owner drawings** pill.
+
+### Before you update
+- One small database change (a new column for the order's bill). A backup of HQ was taken just before release. HQ updates itself; then use **Settings ▸ Application ▸ Force update all machines**.
+
+---
+
 ## 1.13.1 — 26 November 2026
 
 Parallax 1.13.1 makes the web version (Parallax in a browser) work for orders, stock counts and printing reports.
