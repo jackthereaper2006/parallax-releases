@@ -6,6 +6,22 @@ collected here. Version numbers follow [VERSIONING.md](VERSIONING.md).
 
 ---
 
+## 1.13.1 — 26 November 2026
+
+Parallax 1.13.1 makes the web version (Parallax in a browser) work for orders, stock counts and printing reports.
+
+### Fixed
+- **Orders work in the browser.** Order Board, New Order, Special Order, Receive Orders and the Order Ledger used to open empty on the web. They now load and work the same as on the desktop.
+- **Stock Count works in the browser.** Opening a count, entering what was found and reviewing the difference all work on the web.
+- **Data Integrity works in the browser.**
+- **Printing reports from the browser.** Pressing Print on a report (ledgers, Trial Balance, Profit & Loss, salary sheet, contracts, stock reports and the rest) did nothing on the web. It now opens the same A4 page as the desktop in a new tab; **Print** and **Save PDF** use the browser's print dialog (choose "Save as PDF" as the printer).
+- Printing a draft bill from the browser now says plainly that bills print from the desktop app.
+
+### Before you update
+- No database changes, but take a backup on HQ first as always. HQ updates itself; then use **Settings ▸ Application ▸ Force update all machines**.
+
+---
+
 ## 1.13 — 23 November 2026
 
 Parallax 1.13 adds employment contracts to HR and makes branch floats simpler.
